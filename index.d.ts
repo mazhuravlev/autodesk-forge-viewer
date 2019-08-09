@@ -455,6 +455,7 @@ declare namespace Autodesk {
             getRootId(): number;
             setFlagGlobal(flag: any, value: any): void;
             setFlagNode(dbId: number, flag: any, value: any): boolean;
+            getNodeName(nodeId: number): string | undefined;
         }
 
         class InstanceTreeAccess {
