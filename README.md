@@ -2,8 +2,9 @@
 
 Usage
 ----
- import Autodesk from 'autodesk-forge-viewer';
- const autodesk: typeof Autodesk = (window as any).Autodesk;
+
+    import Autodesk from 'autodesk-forge-viewer';
+    const autodesk: typeof Autodesk = (window as any).Autodesk;
 
  Use **Autodesk** as a type, and **autodesk** as a value
 
