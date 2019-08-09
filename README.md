@@ -8,6 +8,12 @@ Usage
 
  Use **Autodesk** as a type, and **autodesk** as a value
 
-OK: const options: Autodesk.Viewing.InitializerOptions = { /* options here */ }
-OK:  **autodesk**.*Viewing.Initializer(options, () => {})
-FAIL:  **Autodesk**.Viewing.Initializer(options, () => {});
+OK:
+
+    const options: Autodesk.Viewing.InitializerOptions = { /* options here */ };
+OK:
+
+    autodesk.Viewing.Initializer(options, () => {});
+FAIL:
+
+    Autodesk.Viewing.Initializer(options, () => {});
