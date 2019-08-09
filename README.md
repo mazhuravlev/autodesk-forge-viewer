@@ -1,5 +1,7 @@
 [Autodesk Forge Viewer](https://forge.autodesk.com/api/viewer-cover-page/) type module for TypeScript ^3.5
 
+**Sample application**: [autodesk-forge-viewer-sample](https://github.com/mazhuravlev/autodesk-forge-viewer-sample)
+
 Usage
 ----
 
