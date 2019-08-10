@@ -911,7 +911,7 @@ declare namespace Autodesk {
               prefix?: string;
             }
 
-            class GuiViewer3D {
+            class GuiViewer3D extends Viewer3D {
               constructor(container: HTMLElement);
             }
 
