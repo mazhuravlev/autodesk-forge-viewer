@@ -215,7 +215,7 @@ declare namespace Autodesk {
           loadDocument(documentId: string, onDocumentLoadSuccess: (document: Document) => void, onDocumentLoadFailure: (errorCode: ErrorCodes) => void): void;
           finish(): void;
           selectItem(item: ViewerItem, onItemLoadSuccess: (viewer: Viewer3D, item: ViewerItem) => void, onItemLoadFail: (errorCode: ErrorCodes) => void): void;
-          getCurrentViewer(): Viewer3D;
+          getCurrentViewer(): Viewer3D | undefined;
           bubble: BubbleNode;
         }
         
@@ -912,7 +912,7 @@ declare namespace Autodesk {
             }
 
             class GuiViewer3D {
-              constructor();
+              constructor(container: HTMLElement);
             }
 
             class Preferences {

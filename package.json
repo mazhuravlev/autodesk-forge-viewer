@@ -1,6 +1,6 @@
 {
   "name": "autodesk-forge-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Autodesk Forge Viewer type module",
   "author": "Mikhail Zhuravlev <m.zhuravlev61@gmail.com>",
   "types": "index.d.ts",
