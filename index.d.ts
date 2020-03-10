@@ -825,6 +825,7 @@ declare namespace Autodesk {
             hasEventListener(type: string, callback: (event: any) => void): any;
             removeEventListener(type: string, callback: (event: any) => void): any;
             dispatchEvent(event: object): void;
+            waitForLoadDone: () => Promise<void>;
         }
 
         class GuiViewer3D extends Viewer3D {
