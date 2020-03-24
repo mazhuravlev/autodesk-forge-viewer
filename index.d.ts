@@ -478,8 +478,13 @@ declare namespace Autodesk {
             children: InstanceTreeNode[];
         }
 
+        interface MyData {
+          urn: string;
+        }
+
         class Model {
             visibilityManager: Private.VisibilityManager;
+            myData: MyData;
 
             clearThemingColors(): void;
             fetchTopology(maxSizeMB: number): Promise<object>;
@@ -799,6 +804,7 @@ declare namespace Autodesk {
             hideModel(model: number|Model): boolean;
             showModel(model: number|Model, preserveTools: boolean): boolean;
             getVisibleModels(): Model[];
+            getHiddenModels(): Model[];
             restoreDefaultSettings(): void;
             disableHighlight(disable: boolean): void;
             disableSelection(disable: boolean): void;
